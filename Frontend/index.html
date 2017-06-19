@@ -2,7 +2,7 @@
 <script type="text/javascript" src="app/js/angularjs/angular.js"></script>
 <script type="text/javascript" src="app/js/angularjs/angular_resource.js"></script>
 <script type="text/javascript" src="app.js"></script>
-
+<script type="text/javascript" src="transportes.js"></script>
 
 <html ng-app="app">
     
@@ -28,6 +28,7 @@
   
     <body ng-controller="appController">
          <ol id="lista2"  > 
+          <cpl-transportes></cpl-transportes>
            <li ng-repeat="data in datosResource.mediosTransporte |filter:filtro.nombre  " ng-include="'index.html'" ></li>
         </ol>
     </body>
