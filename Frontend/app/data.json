@@ -1,0 +1,79 @@
+{
+  "mediosTransporte": [
+    {
+      "nombre": "Terrestres",
+      "nodos": [
+        {
+          "nombre": "Automoviles",
+          "nodos": [
+            {
+              "nombre": "Carga",
+              "nodos": []
+            },
+            {
+              "nombre": "Pasajeros",
+              "nodos": [
+                {
+                  "nombre": "Deportivos",
+                  "nodos": []
+                },
+                {
+                  "nombre": "Sedan",
+                  "nodos": []
+                },
+                {
+                  "nombre": "Familiar",
+                  "nodos": [
+                    {
+                      "nombre": "suvs",
+                      "nodos": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "nombre": "Motocicletas",
+          "nodos": [
+            {
+              "nombre":"Diversion",
+              "nodos":[]
+            },
+            {
+              "nombre":"Trabajo",
+              "nodos":[]
+            },
+            {
+              "nombre":"Viaje",
+              "nodos":[
+                  {
+                    "nombre":"BMW-20X",
+                    "nodos":[]
+                  },
+                  {
+                    "nombre":"HARLEY-DAVIDSON 90-2",
+                    "nodos":[]
+                  }
+                ]
+            }
+            
+            ]
+        },
+        {
+          "nombre": "Ferrocarril",
+          "nodos": []
+        }
+      ]
+    },
+    {
+      "nombre": "Aereo",
+      "nodos": []
+    },
+    {
+      "nombre": "Marinos",
+      "nodos": []
+    }
+  ]
+}

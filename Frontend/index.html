@@ -1,0 +1,45 @@
+<link rel="stylesheet" type="text/css" href="app/css/style.css">
+<script type="text/javascript" src="app/js/angularjs/angular.js"></script>
+<script type="text/javascript" src="app/js/angularjs/angular_resource.js"></script>
+<script type="text/javascript" src="app.js"></script>
+
+
+<html ng-app="app">
+    
+   
+    <head>
+        
+
+          <input  ng-model="filtro.nombre" placeholder="buscar">
+          <!--<button type="button" ng-click="guardar(datosResource.mediosTransporte)">Guardar JSON</button>-->
+
+       
+        <script type="text/ng-template" id="index.html">
+          <a id="nombre_{{data.nombre}}">{{ data.nombre }}</a>
+            <button ng-click="agregar(data)">Agregar</button>
+            <button id="editar_{{data.nombre}}" ng-click="editar(data)">Editar</button>
+            <button ng-click="eliminar(data)" ng-show="data.nodos.length >= 0">Eliminar</button>
+            <ul ng-if="data.nodos">
+                <li id="{{data.nombre}}" ng-repeat="data in data.nodos|filter:filtro.nombre" ng-include="'index.html'">
+                </li>
+            </ul>
+          </script>
+    </head>
+  
+    <body ng-controller="appController">
+         <ol id="lista2"  > 
+           <li ng-repeat="data in datosResource.mediosTransporte |filter:filtro.nombre  " ng-include="'index.html'" ></li>
+        </ol>
+    </body>
+			
+		
+</html>
+
+
+		 
+
+
+
+
+
+
